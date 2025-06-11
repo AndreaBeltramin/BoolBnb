@@ -1,0 +1,213 @@
+/********** RESET ***********/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 5px;
+}
+
+/********** UTILITIES ***********/
+
+.wrapper {
+  height: 100vh;
+}
+
+main {
+  padding-top: 64px;
+}
+
+.text-xl {
+  font-size: 2.6rem;
+}
+
+/* BIGGER BOOTSTRAP CHECKBOX */
+.big-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+/* COLOR UTILITIES */
+.text-white {
+  color: whitesmoke;
+}
+
+.text-gray {
+  color: rgb(230, 230, 230);
+}
+
+.text-darkgray {
+  color: rgb(56, 56, 56);
+}
+
+/********** COMPONENTS ***********/
+
+/* NAVBAR */
+.nav-link {
+  color: white !important;
+}
+
+.dropdown-menu {
+  position: absolute !important;
+  top: 100% !important; /* Posiziona il dropdown sotto il bottone */
+  left: -110px !important;
+}
+
+/* PROPERTY CARD */
+.property-card {
+  box-shadow: 0 0 10px 3px transparent;
+  transition: box-shadow 0.2s;
+}
+
+.property-card:hover {
+  box-shadow: 0 0 10px 5px lightgray;
+  transition: box-shadow 0.2s;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* HEART */
+.heart-pill-top-right {
+  top: 9px;
+  right: 9px;
+  padding: 10px 12px;
+}
+.heart-pill-bottom-center {
+  bottom: 9px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 10px 12px;
+}
+
+.heart {
+  color: darkgray;
+  transition: color 0.15s;
+}
+
+.heart-pill-top-right:hover .heart,
+.heart-pill-bottom-center:hover .heart {
+  color: red;
+  transition: color 0.15s;
+}
+
+/********** HOMEPAGE ***********/
+
+/* PAGINA DETTAGLIO IMMOBILE */
+.immagine-dettaglio {
+  position: relative !important;
+}
+
+.immagine-dettaglio > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge {
+  font-size: 0.9rem;
+}
+
+/* CAROUSEL */
+.carousel-inner {
+  height: 471px;
+}
+.carousel-container {
+  height: 470px;
+  width: 80% !important;
+}
+.carousel-indicators {
+  background-color: rgb(210, 210, 210);
+  border-radius: 50px;
+}
+.carousel-control-next {
+  transform: translate(100%, 0);
+}
+.carousel-control-prev {
+  transform: translate(-100%, 0);
+}
+
+/********** SEARCHPAGE **************/
+
+/* IMMAGINE IMMOBILE */
+.detail-img {
+  height: 400px !important;
+  object-fit: cover !important;
+}
+
+.immagine-dettaglio > img {
+  cursor: pointer;
+}
+
+/* ZOOM IMAGE MODAL */
+#imageModal img {
+  height: auto !important;
+  max-height: 75vh !important;
+  object-fit: contain;
+  max-width: 100%; /* Limita la larghezza */
+}
+
+#imageModal .modal-backdrop.show {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+#imageModal .btn-close {
+  background-color: white !important;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  top: 5px;
+  right: 5px;
+}
+
+/* PROFILE ICON */
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.profile-icon > h6 {
+  font-size: 1.5rem;
+}
+
+.carousel-container {
+  width: 100%;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* ACCORDION */
+.accordion-header button {
+  font-size: 1.3rem;
+}
+
+.accordion-button {
+  box-shadow: none !important;
+}
+.accordion-button:focus,
+.accordion-button:hover,
+.accordion-button:active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+.accordion-button.collapsed {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+form.navbar-form {
+  margin-bottom: 0 !important;
+}
